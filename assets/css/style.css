@@ -1,0 +1,29 @@
+.date{
+    color: #E4D804;
+    font-size: 12px;
+}
+
+.type{
+    font-size: 12px;
+}
+
+.fa-solid{
+    color: #E4D804;
+}
+
+
+.namelink:hover{
+    color: #E4D804 !important;
+}
+
+.imgdiv{
+    background-color: white;
+}
+
+.card-img-top{
+    transition: 0.5s;
+}
+.card-img-top:hover{
+    transition: 0.5s;
+    opacity: 80%;
+}

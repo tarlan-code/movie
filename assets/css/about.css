@@ -1,0 +1,27 @@
+
+.section_1{
+    background-repeat:no-repeat;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 100vh;
+
+    backdrop-filter: blur(550px);
+
+}
+
+.blur {
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    height: 100vh;
+    width: 100%;
+}
+
+.for-color{
+    color: #E4D804;
+}
+
+.bg-color{
+    background-color: rgba(0, 0, 0, 0.215);
+}
