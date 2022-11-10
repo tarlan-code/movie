@@ -24,9 +24,7 @@ fetch(`https://api.tvmaze.com/shows/` + location.search.slice(1)).then(result =>
     
 
   
-    fetch(episodeSite).then(result => result.json()).then(function(data){
-            console.log(data.season);
-    });
+    
     
   
   
@@ -55,11 +53,15 @@ fetch(`https://api.tvmaze.com/shows/` + location.search.slice(1)).then(result =>
     ${summary}
     </div>
     <div class="d-flex justify-content-between  align-items-center">
-        <span class="for-color fs-5">Season: </span>
+        <span class="for-color fs-5" id="season">Season: </span>
         <span><a class="text-decoration-none text-white" href="${officialSite}"><i class="fa-solid fa-globe fa-sm me-1 for-color"></i>Official site </a></span>
     </div>
 </div>
 `
+    fetch(episodeSite).then(result => result.json()).then(function(data){
+        let season = data.season;
+        document.getElementById("season").textContent="Season: " + season;
+    });
     
 })
 
